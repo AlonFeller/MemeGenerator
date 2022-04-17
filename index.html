@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
+    <title>MemeGen_AF</title>
+</head>
+
+<body onload="onInit()">
+    <header>
+        <span class="logo">Logo</span>
+        <nav class="nav bar">
+            <a>Gallery</a>
+            <a>Memes</a>
+            <a>About</a>
+        </nav>
+    </header>
+    <main class="main-container">
+        <div class="selectors">
+            <input class="search" placeholder="Search">
+            <section class="fillters">
+            </section>
+        </div>
+        <section class="gallery">
+            <img src="img/1.jpg" onclick="onCanvas(this)">
+            <img src="img/2.jpg">
+            <img src="img/3.jpg">
+            <img src="img/4.jpg">
+            <img src="img/5.jpg">
+        </section>
+    </main>
+    <main class="main-Editor">
+        <canvas id="canvas" hight="400" width="400"></canvas>
+        <div class=" controler">
+            <input placeholder="Text here">
+            <div>
+                <button class="switchLine">⇅</button>
+                <button class="addLine">+</button>
+                <button class="delete">🗑️</button>
+            </div>
+            <div class="textEditor">
+                <button>A⁺</button>
+                <button>A⁻</button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <section></section>
+                <button class="strokeColor">S</button>
+                <button class="fontColor"></button>
+            </div>
+            <div class="stickers"></div>
+            <button class="share">Share</button>
+            <button class="download">Download</button>
+        </div>
+    </main>
+    <footer>cofferights 2022</footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
